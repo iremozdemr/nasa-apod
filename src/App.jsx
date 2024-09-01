@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   //state'leri tanımlama
@@ -51,10 +52,11 @@ function App() {
     <>
       <Header/>
       <div className='container'>
-        <p className='image-explanation'>{data.explanation}</p>
+        <h3 className='image-title'>{data.title.toLowerCase()}</h3>
         <img className='image' src={data.url} alt={data.title}/>
-        <p className='image-title'>{data.title}</p>
+        <p className='image-explanation'>{data.explanation.toLowerCase()}</p>
       </div>
+      <Footer/>
     </>
   );
 }

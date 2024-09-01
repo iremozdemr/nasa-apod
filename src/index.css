@@ -2,6 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    font-family: monospace;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
 }
 
 .header{
@@ -10,16 +16,17 @@
     align-items: center;
     gap: 30px;
     background-color:black;
+    height: 15vh;
 }
 
 .header .header-logo{
-    width: 20%;
+    height: 15vh;
     margin-left: 10px;
 }
 
 .header .header-title{
     font-family: monospace;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
 }
 
@@ -27,6 +34,39 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 10px;
+    margin: 20px;
     margin-top: 20px;
+}
+
+.container .image{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 50%;
+}
+
+.container .image-title{
+    font-size: 20px;
+    font-family: monospace;
+    align-self: center;
+}
+
+.container .image-explanation{
+    font-family: monospace;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.footer{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer .footer-p{
+    font-weight: 100;
+    margin-right: 30px;
+    display: inline-block;
+    color: white;
 }
